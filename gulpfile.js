@@ -15,6 +15,11 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 
+// Define file sources
+var sassMain = ['sass/style.scss'];  
+var sassSources = ['sass/**/*.scss']; // Any .scss file in any sub-directory  
+var jsSources = ['js/*.js']; // Any .js file in scripts directory
+
 
 gulp.task('build', function() {
     console.log('Building');
